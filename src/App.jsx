@@ -6,6 +6,7 @@ import Home from "./components/Home/Home";
 import Products from "./components/Products/Products";
 import Articles from "./components/Articles/Articles";
 import Admin from "./components/Admin/Admin";
+import NotFound from "./components/NotFound/NotFound";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
           <Route path="/products" element={<Products />} />
           <Route path="/articles" element={<Articles />} />
           <Route path="/admin" element={<Admin />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
     </div>
